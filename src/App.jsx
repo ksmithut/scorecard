@@ -47,7 +47,7 @@ export default function App () {
           </tbody>
         </table>
       </div>
-      <div className='p-2 border-t flex gap-2 text-xs sm:text-sm md:text-base'>
+      <div className='p-2 pb-6 border-t flex gap-2 text-sm sm:text-base font-bold'>
         <Button onClick={() => handleAddRound()}>Add Round</Button>
         <Button
           disabled={state.rounds.length <= 1}
@@ -65,7 +65,7 @@ export default function App () {
           disabled={state.redoStates.length === 0}
           onClick={() => handleRedo()}
         >
-          Redo ↷
+          ↷ Redo
         </Button>
       </div>
     </div>
